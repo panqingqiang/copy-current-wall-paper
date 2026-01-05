@@ -2,10 +2,9 @@
 # 使用 USERPROFILE 环境变量，避免硬编码用户名
 $userProfile = $env:USERPROFILE
 $sourceFile = "$userProfile\AppData\Roaming\Microsoft\Windows\Themes\TranscodedWallpaper"
-$baseDestDir = [Environment]::GetFolderPath("MyPictures")
-# 在图片目录下创建子文件夹
-$customFolderName = "Spotlight_Collection"
-$destinationDir = Join-Path -Path $baseDestDir -ChildPath $customFolderName
+
+$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+$destinationDir = Join-Path -Path $scriptDir -ChildPath "WallPaper"
 
 # 检查源文件是否存在
 if (-not (Test-Path -Path $sourceFile)) {
