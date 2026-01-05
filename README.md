@@ -23,11 +23,11 @@
    ```powershell
    .\copyCurrentWallPaper.ps1
    ```
-4. 执行后，您当前的桌面壁纸将会被自动复制到路径：`C:\Users\[您的用户名]\Pictures\Spotlight_Collection\`。
+4. 执行后，您当前的桌面壁纸将会被自动复制到脚本所在目录的 `WallPaper` 文件夹下（如不存在会自动创建）：`.\WallPaper\`。
 
 ## 示例
 
-运行脚本后，它会自动获取当前壁纸文件，并将其复制到上述目标路径。您可以在该目录下找到并按日期管理所有曾设置为壁纸的图片。
+运行脚本后，它会自动获取当前壁纸文件，并将其复制到 `.\WallPaper\` 目录下。文件名为时间戳格式：`yyyyMMddHHmmss.jpg`，便于按日期管理。
 
 ## 贡献指南
 
