@@ -22,7 +22,7 @@ This is a simple open-source project designed to help users quickly copy the cur
 Here are some common usage examples:
 
 ### Copy Current Wallpaper to a Specific Directory
-After running the script, it automatically retrieves the current wallpaper and copies it to the specified path.
+After running the script, it automatically retrieves the current wallpaper and copies it to the `WallPaper` folder under the script directory. The folder will be created automatically if it doesn't exist.
 
 ## Contribution Guidelines
 
