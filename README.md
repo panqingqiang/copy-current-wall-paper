@@ -2,27 +2,36 @@
 
 ## 项目简介
 
-这是一个简单实用的开源工具，能够帮助用户快速复制当前桌面壁纸到指定位置。该项目由 PowerShell 脚本实现，专为 Windows 操作系统设计。
+这是一个简单实用的开源工具，能够帮助用户快速复制当前桌面壁纸到指定位置。该项目支持 PowerShell 和 CMD 脚本，专为 Windows 操作系统设计。
 
 ## 功能特性
 
 - **自动识别**：快速获取当前桌面壁纸的系统存储路径。
 - **一键复制**：将当前壁纸复制到用户指定的目录中。
+- **多种脚本**：支持 PowerShell 和 CMD 两种脚本方式运行。
 - **简单易用**：无需复杂配置，适合集成到自动化任务或日常使用。
 
 ## 系统要求
 
 - **操作系统**：Windows 10 或更高版本
-- **PowerShell**：**PowerShell 7.1** 或更高版本。您可以通过在 PowerShell 中输入 `$PSVersionTable` 来查看当前版本。
 
 ## 使用方法
 
-1. 确保您的系统符合上述要求，并已安装 PowerShell 7。
+### PowerShell 方式
+1. 确保您的系统已安装 PowerShell（PowerShell 7.1 或更高版本推荐）。
 2. 下载项目脚本文件 `copyCurrentWallPaper.ps1`。
 3. 右键点击脚本文件，选择"使用 PowerShell 运行"，或在 PowerShell 终端中导航到脚本所在目录，执行以下命令：
    ```powershell
    .\copyCurrentWallPaper.ps1
    ```
+
+### CMD 方式
+1. 在命令提示符中导航到脚本所在目录
+2. 执行以下命令：
+   ```cmd
+   copyCurrentWallPaper.cmd
+   ```
+
 4. 执行后，您当前的桌面壁纸将会被自动复制到脚本所在目录的 `WallPaper` 文件夹下（如不存在会自动创建）：`.\WallPaper\`。
 
 ## 示例
